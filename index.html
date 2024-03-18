@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>esercizio dom</title>
+    <!-- style bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>ESERCITAZIONE DOM</h1>
+    <div id="paragr">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore nisi culpa? Rem, ullam repellat cumque qui provident nostrum dolorum commodi eaque quas quidem voluptates, perspiciatis possimus a neque maiores.</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste vero sapiente quam adipisci nesciunt nihil ratione nemo ipsa deleniti omnis consectetur quos ipsum fuga, aliquid, non, perferendis laudantium dicta quibusdam?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quas fuga, facilis architecto excepturi voluptatum veritatis sed adipisci beatae quae nihil possimus nesciunt porro culpa similique sequi ea laudantium reprehenderit!</p>
+    </div>
+
+    <button class="btn  btn-primary" id="oneBtn">Nascondi</button>
+    <button class="btn btn-secondary" id="secBtn">Cambia colore</button>
+    <button class="btn btn-success" id="thirdBtn">Grassetto</button>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="display-2 fw-bold ">Inserisci la tua card</h2>
+            </div>
+
+            <div class="col-12">
+                <div class="border p-5">
+                    <div class="mb-3">
+                      <label for="inputName" class="form-label">Nome e Cognome</label>
+                      <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputRole" class="form-label">Città</label>
+                      <input type="text" class="form-control" id="inputCittà">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputAge" class="form-label">Età</label>
+                        <input type="text" class="form-control" id="inputAge" aria-describedby="emailHelp">
+                      </div>
+                    <button id="btnForm" class="btn btn-primary">Inserisci</button>
+                </div>
+            </div>
+            <div class="col-12">
+                <h2 class="display-2 ">Student's cards</h2>
+            </div>
+            <div class="row" id="cardsWrapper">
+                <!-- qui va la card che creo in js -->
+            </div>
+        </div>
+    </div>
+
+
+        <!-- cdn bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- my js -->
+        <script src="./main.js"></script>
+    </body>
+    </html>
